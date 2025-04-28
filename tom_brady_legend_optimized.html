@@ -1,0 +1,3907 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Brady: Visualizing a Legend</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      margin: 40px auto;
+      max-width: 960px;
+      line-height: 1.8;
+      color: #333;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 24px;
+    }
+    .chart-container {
+      width: 90%;
+      margin: 40px auto;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+  <h1>Tom Brady: Stability, Peak Performance, and a Legend</h1>
+
+  <p>In the long and illustrious history of the NFL, few names shine as brightly as Tom Brady. Not only did he set a record with seven Super Bowl championships, but he also crafted one of the most iconic and enduring legacies in professional sports. Over a career spanning 22 seasons, from 2000 to 2022, Brady not only survived the rigorous demands of professional football but thrived, achieving levels of consistency and excellence rarely witnessed in such a physically demanding sport.</p>
+
+  <p>Brady’s career is marked by an exceptional arc of greatness. Entering the league as the 199th pick in the 2000 NFL Draft, few expected him to even become a starter, let alone the greatest of all time. Yet, within two seasons, Brady led the New England Patriots to a Super Bowl victory, igniting a dynasty that would span two decades. His early years showcased rapid development, as he mastered the complexities of professional defenses and adapted his game to suit the evolving strategies of the Patriots’ offense.</p>
+
+  <div class="chart-container" id="chart1"></div>
+
+  <p>When we examine Brady’s year-by-year passing yards, a remarkable pattern of sustained excellence emerges. Unlike many players who experience peaks and valleys, Brady’s performance remained consistently high. His ability to adapt to new teammates, systems, and even coaching styles enabled him to excel in various competitive environments. After his ACL injury in 2008, which forced him to miss an entire season, many doubted his return. However, Brady defied expectations, coming back even stronger, refining his mechanics, and extending his prime well into his late 30s and early 40s.</p>
+
+  <p>In 2020, Brady made one of the boldest moves in NFL history by leaving New England and joining the Tampa Bay Buccaneers. Critics speculated whether he could replicate his success without long-time coach Bill Belichick. Yet, in his very first season with Tampa Bay, Brady led the team to a Super Bowl victory, silencing doubters and proving that his greatness transcended systems and settings. This phase of his career highlighted not only his physical preparation but also his mental toughness and leadership.</p>
+
+  <div class="chart-container" id="chart2"></div>
+
+  <p>Beyond longevity, what truly sets Brady apart is the quality and precision of his play. His touchdown (TD) statistics, coupled with an impressive ability to minimize interceptions (INTs), paint the picture of a quarterback in full command of his craft. Even as he aged, Brady’s TD numbers remained elite, while his interception rate stayed among the lowest in the league. His decision-making, accuracy, and calmness under pressure enabled him to orchestrate numerous game-winning drives, often in the most critical moments of playoff games.</p>
+
+  <p>Brady's playoff performances are perhaps the strongest testament to his greatness. Holding the record for most playoff wins by a quarterback, Brady repeatedly delivered under the highest pressure. His ability to lead comeback victories, such as the famous 28-3 turnaround against the Atlanta Falcons in Super Bowl LI, cemented his status as the ultimate clutch performer. No stage was too big, no moment too daunting.</p>
+
+  <div class="chart-container" id="chart3"></div>
+
+  <p>When compared with fellow legendary quarterbacks like Peyton Manning, Joe Montana, and Drew Brees, Brady’s superiority becomes even more apparent. While each of these players had remarkable careers, none matched Brady’s combination of Super Bowl victories, playoff wins, and overall statistical dominance. Montana’s four Super Bowl titles and Manning’s five MVP awards are extraordinary, but Brady’s ability to sustain success over two decades, with multiple teams, places him in a league of his own. His seven Super Bowl wins are not just records—they represent a level of sustained competitiveness that redefined the standard for greatness in professional football.</p>
+
+  <div class="chart-container" id="chart4"></div>
+
+  <p>Moreover, Brady’s impact extends beyond the field. His relentless work ethic, commitment to physical conditioning, and dedication to preparation have inspired countless players. His TB12 Method, focusing on pliability, nutrition, and recovery, challenged conventional wisdom and enabled him to perform at an elite level into his mid-40s—a feat almost unheard of in the NFL. His leadership, both on and off the field, elevated the performance of those around him. Teammates often spoke of his ability to instill belief, demand accountability, and maintain focus during the toughest moments of the season.</p>
+
+  <p>An analysis of Brady’s performance across different phases of his career reveals a fascinating portrait of resilience and evolution. In his early career, he relied heavily on short, accurate passes and a strong defensive team. As he matured, he developed into a deep-threat passer, capable of executing complex offensive schemes and reading defenses at an unparalleled level. His late-career performance, particularly in Tampa Bay, demonstrated his ability to adapt to new environments while maintaining the same high standards.</p>
+
+  <div class="chart-container" id="chart5"></div>
+
+  <p>Tom Brady’s greatness is not merely the result of natural talent but a testament to years of dedication, discipline, and an unrelenting pursuit of perfection. He demonstrated that in football—a sport known for its physical toll and fleeting careers—stability and peak performance can coexist. Brady remains not just one of the best quarterbacks in NFL history, but a legendary figure whose influence will resonate for generations, not only in football but in the broader world of sports.</p>
+
+  <!-- Chart embedding scripts -->
+  <script>
+    vegaEmbed("#chart1", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-3224c0d28b0e829b1ff84e1d5b1feb06": [
+      {
+        "Year": 2008,
+        "label": "2008: Injured (ACL tear)"
+      },
+      {
+        "Year": 2020,
+        "label": "2020: Joined Buccaneers & Won SB"
+      }
+    ],
+    "data-a8a0deee2ec61c197208771fa9a8b0e9": [
+      {
+        "Passing_Int": 0.0,
+        "Passing_TD": 0.0,
+        "Passing_Yds": 6.0,
+        "Year": 2000
+      },
+      {
+        "Passing_Int": 13.0,
+        "Passing_TD": 19.0,
+        "Passing_Yds": 3415.0,
+        "Year": 2001
+      },
+      {
+        "Passing_Int": 14.0,
+        "Passing_TD": 28.0,
+        "Passing_Yds": 3764.0,
+        "Year": 2002
+      },
+      {
+        "Passing_Int": 14.0,
+        "Passing_TD": 28.0,
+        "Passing_Yds": 4412.0,
+        "Year": 2003
+      },
+      {
+        "Passing_Int": 14.0,
+        "Passing_TD": 33.0,
+        "Passing_Yds": 4279.0,
+        "Year": 2004
+      },
+      {
+        "Passing_Int": 16.0,
+        "Passing_TD": 30.0,
+        "Passing_Yds": 4652.0,
+        "Year": 2005
+      },
+      {
+        "Passing_Int": 16.0,
+        "Passing_TD": 29.0,
+        "Passing_Yds": 4253.0,
+        "Year": 2006
+      },
+      {
+        "Passing_Int": 11.0,
+        "Passing_TD": 56.0,
+        "Passing_Yds": 5543.0,
+        "Year": 2007
+      },
+      {
+        "Passing_Int": 0.0,
+        "Passing_TD": 0.0,
+        "Passing_Yds": 76.0,
+        "Year": 2008
+      },
+      {
+        "Passing_Int": 16.0,
+        "Passing_TD": 30.0,
+        "Passing_Yds": 4552.0,
+        "Year": 2009
+      },
+      {
+        "Passing_Int": 5.0,
+        "Passing_TD": 38.0,
+        "Passing_Yds": 4199.0,
+        "Year": 2010
+      },
+      {
+        "Passing_Int": 16.0,
+        "Passing_TD": 47.0,
+        "Passing_Yds": 6113.0,
+        "Year": 2011
+      },
+      {
+        "Passing_Int": 10.0,
+        "Passing_TD": 38.0,
+        "Passing_Yds": 5491.0,
+        "Year": 2012
+      },
+      {
+        "Passing_Int": 11.0,
+        "Passing_TD": 26.0,
+        "Passing_Yds": 4818.0,
+        "Year": 2013
+      },
+      {
+        "Passing_Int": 13.0,
+        "Passing_TD": 43.0,
+        "Passing_Yds": 5030.0,
+        "Year": 2014
+      },
+      {
+        "Passing_Int": 9.0,
+        "Passing_TD": 39.0,
+        "Passing_Yds": 5382.0,
+        "Year": 2015
+      },
+      {
+        "Passing_Int": 5.0,
+        "Passing_TD": 35.0,
+        "Passing_Yds": 4691.0,
+        "Year": 2016
+      },
+      {
+        "Passing_Int": 8.0,
+        "Passing_TD": 40.0,
+        "Passing_Yds": 5709.0,
+        "Year": 2017
+      },
+      {
+        "Passing_Int": 14.0,
+        "Passing_TD": 31.0,
+        "Passing_Yds": 5308.0,
+        "Year": 2018
+      },
+      {
+        "Passing_Int": 9.0,
+        "Passing_TD": 24.0,
+        "Passing_Yds": 4266.0,
+        "Year": 2019
+      },
+      {
+        "Passing_Int": 15.0,
+        "Passing_TD": 50.0,
+        "Passing_Yds": 5694.0,
+        "Year": 2020
+      },
+      {
+        "Passing_Int": 13.0,
+        "Passing_TD": 46.0,
+        "Passing_Yds": 5916.0,
+        "Year": 2021
+      },
+      {
+        "Passing_Int": 9.0,
+        "Passing_TD": 24.0,
+        "Passing_Yds": 4610.0,
+        "Year": 2022
+      }
+    ]
+  },
+  "height": 400,
+  "layer": [
+    {
+      "data": {
+        "name": "data-a8a0deee2ec61c197208771fa9a8b0e9"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Passing_Yds",
+          "title": "Passing Yards",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "color": {
+          "gradient": "linear",
+          "stops": [
+            {
+              "color": "lightblue",
+              "offset": 0
+            },
+            {
+              "color": "steelblue",
+              "offset": 1
+            }
+          ],
+          "x1": 1,
+          "x2": 1,
+          "y1": 1,
+          "y2": 0
+        },
+        "line": {
+          "color": "steelblue"
+        },
+        "type": "area"
+      },
+      "name": "view_177"
+    },
+    {
+      "data": {
+        "name": "data-a8a0deee2ec61c197208771fa9a8b0e9"
+      },
+      "encoding": {
+        "opacity": {
+          "value": 0
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "type": "point"
+      },
+      "name": "view_169"
+    },
+    {
+      "data": {
+        "name": "data-a8a0deee2ec61c197208771fa9a8b0e9"
+      },
+      "encoding": {
+        "opacity": {
+          "condition": {
+            "empty": false,
+            "param": "param_174",
+            "value": 1
+          },
+          "value": 0
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Passing_Yds",
+          "title": "Passing Yards",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "size": 60,
+        "type": "point"
+      }
+    },
+    {
+      "data": {
+        "name": "data-a8a0deee2ec61c197208771fa9a8b0e9"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "color": "gray",
+        "type": "rule"
+      },
+      "transform": [
+        {
+          "filter": {
+            "empty": false,
+            "param": "param_174"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-a8a0deee2ec61c197208771fa9a8b0e9"
+      },
+      "encoding": {
+        "text": {
+          "condition": {
+            "empty": false,
+            "field": "Passing_Yds",
+            "param": "param_174",
+            "type": "quantitative"
+          },
+          "value": " "
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Passing_Yds",
+          "title": "Passing Yards",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "align": "left",
+        "dx": 5,
+        "dy": -5,
+        "type": "text"
+      }
+    },
+    {
+      "data": {
+        "name": "data-3224c0d28b0e829b1ff84e1d5b1feb06"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "color": "gray",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "type": "rule"
+      }
+    },
+    {
+      "data": {
+        "name": "data-3224c0d28b0e829b1ff84e1d5b1feb06"
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "value": 0
+        }
+      },
+      "mark": {
+        "align": "left",
+        "color": "black",
+        "dx": 5,
+        "dy": -80,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "type": "text"
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "param_174",
+      "select": {
+        "fields": [
+          "Year"
+        ],
+        "nearest": true,
+        "on": "pointerover",
+        "type": "point"
+      },
+      "views": [
+        "view_169"
+      ]
+    },
+    {
+      "bind": "scales",
+      "name": "param_175",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_177"
+      ]
+    }
+  ],
+  "title": "Tom Brady Annual Passing Yards (Hover for Details)",
+  "width": 700
+}, {mode: "vega-lite"}).catch(console.error);
+    vegaEmbed("#chart2", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-3224c0d28b0e829b1ff84e1d5b1feb06": [
+      {
+        "Year": 2008,
+        "label": "2008: Injured (ACL tear)"
+      },
+      {
+        "Year": 2020,
+        "label": "2020: Joined Buccaneers & Won SB"
+      }
+    ],
+    "data-9c52e39c7977fbc1f8723865ddb3d78d": [
+      {
+        "Stat": "Passing TDs",
+        "Value": 0.0,
+        "Year": 2000
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 19.0,
+        "Year": 2001
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 28.0,
+        "Year": 2002
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 28.0,
+        "Year": 2003
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 33.0,
+        "Year": 2004
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 30.0,
+        "Year": 2005
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 29.0,
+        "Year": 2006
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 56.0,
+        "Year": 2007
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 0.0,
+        "Year": 2008
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 30.0,
+        "Year": 2009
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 38.0,
+        "Year": 2010
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 47.0,
+        "Year": 2011
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 38.0,
+        "Year": 2012
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 26.0,
+        "Year": 2013
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 43.0,
+        "Year": 2014
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 39.0,
+        "Year": 2015
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 35.0,
+        "Year": 2016
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 40.0,
+        "Year": 2017
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 31.0,
+        "Year": 2018
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 24.0,
+        "Year": 2019
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 50.0,
+        "Year": 2020
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 46.0,
+        "Year": 2021
+      },
+      {
+        "Stat": "Passing TDs",
+        "Value": 24.0,
+        "Year": 2022
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 0.0,
+        "Year": 2000
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 13.0,
+        "Year": 2001
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 14.0,
+        "Year": 2002
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 14.0,
+        "Year": 2003
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 14.0,
+        "Year": 2004
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 16.0,
+        "Year": 2005
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 16.0,
+        "Year": 2006
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 11.0,
+        "Year": 2007
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 0.0,
+        "Year": 2008
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 16.0,
+        "Year": 2009
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 5.0,
+        "Year": 2010
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 16.0,
+        "Year": 2011
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 10.0,
+        "Year": 2012
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 11.0,
+        "Year": 2013
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 13.0,
+        "Year": 2014
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 9.0,
+        "Year": 2015
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 5.0,
+        "Year": 2016
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 8.0,
+        "Year": 2017
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 14.0,
+        "Year": 2018
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 9.0,
+        "Year": 2019
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 15.0,
+        "Year": 2020
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 13.0,
+        "Year": 2021
+      },
+      {
+        "Stat": "Interceptions",
+        "Value": 9.0,
+        "Year": 2022
+      }
+    ]
+  },
+  "height": 400,
+  "layer": [
+    {
+      "data": {
+        "name": "data-9c52e39c7977fbc1f8723865ddb3d78d"
+      },
+      "encoding": {
+        "color": {
+          "field": "Stat",
+          "scale": {
+            "domain": [
+              "Passing TDs",
+              "Interceptions"
+            ],
+            "range": [
+              "green",
+              "red"
+            ]
+          },
+          "title": "Statistic",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Value",
+          "title": "TDs / INTs",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "point": false,
+        "type": "line"
+      },
+      "name": "view_178"
+    },
+    {
+      "data": {
+        "name": "data-9c52e39c7977fbc1f8723865ddb3d78d"
+      },
+      "encoding": {
+        "opacity": {
+          "value": 0
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "type": "point"
+      },
+      "name": "view_170"
+    },
+    {
+      "data": {
+        "name": "data-9c52e39c7977fbc1f8723865ddb3d78d"
+      },
+      "encoding": {
+        "color": {
+          "field": "Stat",
+          "scale": {
+            "domain": [
+              "Passing TDs",
+              "Interceptions"
+            ],
+            "range": [
+              "green",
+              "red"
+            ]
+          },
+          "title": "Statistic",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "empty": false,
+            "param": "param_176",
+            "value": 1
+          },
+          "value": 0
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Value",
+          "title": "TDs / INTs",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "size": 60,
+        "type": "point"
+      }
+    },
+    {
+      "data": {
+        "name": "data-9c52e39c7977fbc1f8723865ddb3d78d"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "color": "gray",
+        "type": "rule"
+      },
+      "transform": [
+        {
+          "filter": {
+            "empty": false,
+            "param": "param_176"
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "name": "data-9c52e39c7977fbc1f8723865ddb3d78d"
+      },
+      "encoding": {
+        "color": {
+          "field": "Stat",
+          "scale": {
+            "domain": [
+              "Passing TDs",
+              "Interceptions"
+            ],
+            "range": [
+              "green",
+              "red"
+            ]
+          },
+          "title": "Statistic",
+          "type": "nominal"
+        },
+        "text": {
+          "condition": {
+            "empty": false,
+            "field": "Value",
+            "param": "param_176",
+            "type": "quantitative"
+          },
+          "value": " "
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Value",
+          "title": "TDs / INTs",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "align": "left",
+        "dx": 5,
+        "dy": -5,
+        "type": "text"
+      }
+    },
+    {
+      "data": {
+        "name": "data-3224c0d28b0e829b1ff84e1d5b1feb06"
+      },
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        }
+      },
+      "mark": {
+        "color": "gray",
+        "strokeDash": [
+          4,
+          2
+        ],
+        "type": "rule"
+      }
+    },
+    {
+      "data": {
+        "name": "data-3224c0d28b0e829b1ff84e1d5b1feb06"
+      },
+      "encoding": {
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "x": {
+          "field": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "value": 0
+        }
+      },
+      "mark": {
+        "align": "left",
+        "color": "black",
+        "dx": 5,
+        "dy": -80,
+        "fontSize": 12,
+        "fontStyle": "italic",
+        "type": "text"
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "param_176",
+      "select": {
+        "fields": [
+          "Year"
+        ],
+        "nearest": true,
+        "on": "pointerover",
+        "type": "point"
+      },
+      "views": [
+        "view_170"
+      ]
+    },
+    {
+      "bind": "scales",
+      "name": "param_177",
+      "select": {
+        "encodings": [
+          "x",
+          "y"
+        ],
+        "type": "interval"
+      },
+      "views": [
+        "view_178"
+      ]
+    }
+  ],
+  "title": "Tom Brady TDs vs INTs (Hover for Details)",
+  "width": 700
+}, {mode: "vega-lite"}).catch(console.error);
+    vegaEmbed("#chart3", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-90543e90d97c9b7973c09c566ec7bf48": [
+      {
+        "Metric": "Passing Yards",
+        "RawValue": 288.0,
+        "player": "Drew Brees"
+      },
+      {
+        "Metric": "Passing Yards",
+        "RawValue": 285.5,
+        "player": "Joe Montana"
+      },
+      {
+        "Metric": "Passing Yards",
+        "RawValue": 250.25,
+        "player": "Peyton Manning"
+      },
+      {
+        "Metric": "Passing Yards",
+        "RawValue": 303.9,
+        "player": "Tom Brady"
+      }
+    ],
+    "data-9dd25b3386557ebae7ceef3440f2e670": [
+      {
+        "Metric": "Super Bowl Wins",
+        "RawValue": 1.0,
+        "player": "Drew Brees"
+      },
+      {
+        "Metric": "Super Bowl Wins",
+        "RawValue": 4.0,
+        "player": "Joe Montana"
+      },
+      {
+        "Metric": "Super Bowl Wins",
+        "RawValue": 2.0,
+        "player": "Peyton Manning"
+      },
+      {
+        "Metric": "Super Bowl Wins",
+        "RawValue": 7.0,
+        "player": "Tom Brady"
+      },
+      {
+        "Metric": "Super Bowl Win Rate",
+        "RawValue": 1.0,
+        "player": "Drew Brees"
+      },
+      {
+        "Metric": "Super Bowl Win Rate",
+        "RawValue": 1.0,
+        "player": "Joe Montana"
+      },
+      {
+        "Metric": "Super Bowl Win Rate",
+        "RawValue": 0.5,
+        "player": "Peyton Manning"
+      },
+      {
+        "Metric": "Super Bowl Win Rate",
+        "RawValue": 0.7,
+        "player": "Tom Brady"
+      }
+    ]
+  },
+  "params": [
+    {
+      "bind": "legend",
+      "name": "param_178",
+      "select": {
+        "fields": [
+          "player"
+        ],
+        "type": "point"
+      },
+      "views": [
+        "view_173",
+        "view_174"
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "vconcat": [
+    {
+      "data": {
+        "name": "data-90543e90d97c9b7973c09c566ec7bf48"
+      },
+      "encoding": {
+        "color": {
+          "field": "player",
+          "title": "Quarterback",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "param": "param_178",
+            "value": 1
+          },
+          "value": 0.2
+        },
+        "tooltip": [
+          {
+            "field": "player",
+            "type": "nominal"
+          },
+          {
+            "field": "RawValue",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "RawValue",
+          "title": "Passing Yards",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "player",
+          "sort": "-x",
+          "title": "Quarterback",
+          "type": "nominal"
+        }
+      },
+      "height": 200,
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_173",
+      "title": "Passing Yards Comparison",
+      "width": 600
+    },
+    {
+      "data": {
+        "name": "data-9dd25b3386557ebae7ceef3440f2e670"
+      },
+      "encoding": {
+        "color": {
+          "field": "player",
+          "title": "Quarterback",
+          "type": "nominal"
+        },
+        "opacity": {
+          "condition": {
+            "param": "param_178",
+            "value": 1
+          },
+          "value": 0.2
+        },
+        "tooltip": [
+          {
+            "field": "player",
+            "type": "nominal"
+          },
+          {
+            "field": "Metric",
+            "type": "nominal"
+          },
+          {
+            "field": "RawValue",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "RawValue",
+          "title": "Value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Metric",
+          "title": "",
+          "type": "nominal"
+        }
+      },
+      "height": 200,
+      "mark": {
+        "type": "bar"
+      },
+      "name": "view_174",
+      "title": "Super Bowl Wins & Win Rate Comparison",
+      "width": 600
+    }
+  ]
+}, {mode: "vega-lite"}).catch(console.error);
+    vegaEmbed("#chart4", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-48992efdd8b958da3b931f4b243c8840": [
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Metric": "Yards Mean",
+        "Value": 225.28181818181818
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Metric": "Yards Mean",
+        "Value": 290.7412587412587
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Metric": "Yards Mean",
+        "Value": 279.859375
+      },
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Metric": "Yards Std",
+        "Value": 78.28765258406081
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Metric": "Yards Std",
+        "Value": 72.31666603997176
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Metric": "Yards Std",
+        "Value": 80.60848652836565
+      },
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Metric": "Yards Min",
+        "Value": 6.0
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Metric": "Yards Min",
+        "Value": 126.0
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Metric": "Yards Min",
+        "Value": 76.0
+      },
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Metric": "Yards Max",
+        "Value": 410.0
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Metric": "Yards Max",
+        "Value": 505.0
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Metric": "Yards Max",
+        "Value": 517.0
+      },
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Metric": "TD Mean",
+        "Value": 1.518181818181818
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Metric": "TD Mean",
+        "Value": 2.020979020979021
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Metric": "TD Mean",
+        "Value": 2.171875
+      }
+    ],
+    "data-54f36a8ffc010164b107f6f48af11503": [
+      {
+        "Career Phase": "Early Career (2000-2006)",
+        "Passing_Yds": 24781.0
+      },
+      {
+        "Career Phase": "Late Career (2015-2022)",
+        "Passing_Yds": 41576.0
+      },
+      {
+        "Career Phase": "Mid Career (2007-2014)",
+        "Passing_Yds": 35822.0
+      }
+    ]
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-54f36a8ffc010164b107f6f48af11503"
+      },
+      "encoding": {
+        "color": {
+          "field": "Career Phase",
+          "title": "Career Phase",
+          "type": "nominal"
+        },
+        "theta": {
+          "field": "Passing_Yds",
+          "title": "Total Passing Yards",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "Career Phase",
+            "type": "nominal"
+          },
+          {
+            "field": "Passing_Yds",
+            "type": "quantitative"
+          }
+        ]
+      },
+      "height": 350,
+      "mark": {
+        "innerRadius": 50,
+        "type": "arc"
+      },
+      "name": "view_176",
+      "title": "Tom Brady Career Passing Yards by Phase",
+      "width": 350
+    },
+    {
+      "data": {
+        "name": "data-48992efdd8b958da3b931f4b243c8840"
+      },
+      "encoding": {
+        "color": {
+          "field": "Career Phase",
+          "title": "Career Phase",
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "Career Phase",
+            "type": "nominal"
+          },
+          {
+            "field": "Value",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Value",
+          "title": "Value",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Metric",
+          "title": "Performance Metric",
+          "type": "nominal"
+        }
+      },
+      "height": 350,
+      "mark": {
+        "type": "bar"
+      },
+      "title": "Selected Career Phase - Stability & Performance Metrics",
+      "transform": [
+        {
+          "filter": {
+            "param": "param_180"
+          }
+        }
+      ],
+      "width": 400
+    }
+  ],
+  "params": [
+    {
+      "name": "param_180",
+      "select": {
+        "fields": [
+          "Career Phase"
+        ],
+        "type": "point"
+      },
+      "views": [
+        "view_176"
+      ]
+    }
+  ]
+}, {mode: "vega-lite"}).catch(console.error);
+    vegaEmbed("#chart5", {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-121fbc33e510c3665e6836d898b5f59f": [
+      {
+        "Metric": "passing_yards",
+        "Value": 263.0,
+        "player": "Joe Burrow",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 6.0,
+        "player": "Joe Mixon",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 283.0,
+        "player": "Matthew Stafford",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Cooper Kupp",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 270.0,
+        "player": "Patrick Mahomes",
+        "year": 2020
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 201.0,
+        "player": "Tom Brady",
+        "year": 2020
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 286.0,
+        "player": "Patrick Mahomes",
+        "year": 2019
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 219.0,
+        "player": "Jimmy Garoppolo",
+        "year": 2019
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 262.0,
+        "player": "Tom Brady",
+        "year": 2018
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 229.0,
+        "player": "Jared Goff",
+        "year": 2018
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 505.0,
+        "player": "Tom Brady",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Danny Amendola",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 373.0,
+        "player": "Nick Foles",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 1.0,
+        "player": "Trey Burton",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 284.0,
+        "player": "Matt Ryan",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 466.0,
+        "player": "Tom Brady",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Julian Edelman",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 265.0,
+        "player": "Cam Newton",
+        "year": 2015
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 141.0,
+        "player": "Peyton Manning",
+        "year": 2015
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 328.0,
+        "player": "Tom Brady",
+        "year": 2014
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 247.0,
+        "player": "Russell Wilson",
+        "year": 2014
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 280.0,
+        "player": "Peyton Manning",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 206.0,
+        "player": "Russell Wilson",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Tarvaris Jackson",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 287.0,
+        "player": "Joe Flacco",
+        "year": 2012
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 302.0,
+        "player": "Colin Kaepernick",
+        "year": 2012
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 276.0,
+        "player": "Tom Brady",
+        "year": 2011
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 296.0,
+        "player": "Eli Manning",
+        "year": 2011
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 304.0,
+        "player": "Aaron Rodgers",
+        "year": 2010
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 263.0,
+        "player": "Ben Roethlisberger",
+        "year": 2010
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 333.0,
+        "player": "Peyton Manning",
+        "year": 2009
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 288.0,
+        "player": "Drew Brees",
+        "year": 2009
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 377.0,
+        "player": "Kurt Warner",
+        "year": 2008
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 256.0,
+        "player": "Ben Roethlisberger",
+        "year": 2008
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 266.0,
+        "player": "Tom Brady",
+        "year": 2007
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 255.0,
+        "player": "Eli Manning",
+        "year": 2007
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 165.0,
+        "player": "Rex Grossman",
+        "year": 2006
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 247.0,
+        "player": "Peyton Manning",
+        "year": 2006
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 123.0,
+        "player": "Ben Roethlisberger",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 43.0,
+        "player": "Antwaan Randle El",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 273.0,
+        "player": "Matt Hasselbeck",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 236.0,
+        "player": "Tom Brady",
+        "year": 2004
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 357.0,
+        "player": "Donovan McNabb",
+        "year": 2004
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 323.0,
+        "player": "Jake Delhomme",
+        "year": 2003
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 354.0,
+        "player": "Tom Brady",
+        "year": 2003
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 272.0,
+        "player": "Rich Gannon",
+        "year": 2002
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 215.0,
+        "player": "Brad Johnson",
+        "year": 2002
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 145.0,
+        "player": "Tom Brady",
+        "year": 2001
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 365.0,
+        "player": "Kurt Warner",
+        "year": 2001
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 112.0,
+        "player": "Kerry Collins",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 153.0,
+        "player": "Trent Dilfer",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Tony Banks",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 214.0,
+        "player": "Steve McNair",
+        "year": 1999
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 414.0,
+        "player": "Kurt Warner",
+        "year": 1999
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 219.0,
+        "player": "Chris Chandler",
+        "year": 1998
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 336.0,
+        "player": "John Elway",
+        "year": 1998
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 123.0,
+        "player": "John Elway",
+        "year": 1997
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 256.0,
+        "player": "Brett Favre",
+        "year": 1997
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 246.0,
+        "player": "Brett Favre",
+        "year": 1996
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 253.0,
+        "player": "Drew Bledsoe",
+        "year": 1996
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 209.0,
+        "player": "Troy Aikman",
+        "year": 1995
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 239.0,
+        "player": "Neil O'Donnell",
+        "year": 1995
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 275.0,
+        "player": "Stan Humphries",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 30.0,
+        "player": "Gale Gilbert",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 325.0,
+        "player": "Steve Young",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 6.0,
+        "player": "Bill Musgrave",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Elvis Grbac",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 260.0,
+        "player": "Jim Kelly",
+        "year": 1993
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 207.0,
+        "player": "Troy Aikman",
+        "year": 1993
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 194.0,
+        "player": "Frank Reich",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 82.0,
+        "player": "Jim Kelly",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 273.0,
+        "player": "Troy Aikman",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 275.0,
+        "player": "Jim Kelly",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 11.0,
+        "player": "Frank Reich",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 292.0,
+        "player": "Mark Rypien",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 212.0,
+        "player": "Jim Kelly",
+        "year": 1990
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 222.0,
+        "player": "Jeff Hostetler",
+        "year": 1990
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 108.0,
+        "player": "John Elway",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 28.0,
+        "player": "Gary Kubiak",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 297.0,
+        "player": "Joe Montana",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 20.0,
+        "player": "Steve Young",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 144.0,
+        "player": "Boomer Esiason",
+        "year": 1988
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 357.0,
+        "player": "Joe Montana",
+        "year": 1988
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 257.0,
+        "player": "John Elway",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 23.0,
+        "player": "Steve Sewell",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 340.0,
+        "player": "Doug Williams",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Jay Schroeder",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 304.0,
+        "player": "John Elway",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 48.0,
+        "player": "Gary Kubiak",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 268.0,
+        "player": "Phil Simms",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 256.0,
+        "player": "Jim McMahon",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Steve Fuller",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 177.0,
+        "player": "Steve Grogan",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Tony Eason",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 318.0,
+        "player": "Dan Marino",
+        "year": 1984
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 331.0,
+        "player": "Joe Montana",
+        "year": 1984
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 172.0,
+        "player": "Jim Plunkett",
+        "year": 1983
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 243.0,
+        "player": "Joe Theismann",
+        "year": 1983
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 97.0,
+        "player": "David Woodley",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Don Strock",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 143.0,
+        "player": "Joe Theismann",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 300.0,
+        "player": "Ken Anderson",
+        "year": 1981
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 157.0,
+        "player": "Joe Montana",
+        "year": 1981
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 291.0,
+        "player": "Ron Jaworski",
+        "year": 1980
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 261.0,
+        "player": "Jim Plunkett",
+        "year": 1980
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 309.0,
+        "player": "Terry Bradshaw",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 212.0,
+        "player": "Vince Ferragamo",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 24.0,
+        "player": "Lawrence McCutcheon",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 228.0,
+        "player": "Roger Staubach",
+        "year": 1978
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 318.0,
+        "player": "Terry Bradshaw",
+        "year": 1978
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 183.0,
+        "player": "Roger Staubach",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 5.0,
+        "player": "Danny White",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 29.0,
+        "player": "Robert Newhouse",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 39.0,
+        "player": "Craig Morton",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 22.0,
+        "player": "Norris Weese",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 205.0,
+        "player": "Fran Tarkenton",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 81.0,
+        "player": "Bob Lee",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 180.0,
+        "player": "Ken Stabler",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 204.0,
+        "player": "Roger Staubach",
+        "year": 1975
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 209.0,
+        "player": "Terry Bradshaw",
+        "year": 1975
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 102.0,
+        "player": "Fran Tarkenton",
+        "year": 1974
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 96.0,
+        "player": "Terry Bradshaw",
+        "year": 1974
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 73.0,
+        "player": "Bob Griese",
+        "year": 1973
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 182.0,
+        "player": "Fran Tarkenton",
+        "year": 1973
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 88.0,
+        "player": "Bob Griese",
+        "year": 1972
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 104.0,
+        "player": "Billy Kilmer",
+        "year": 1972
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 119.0,
+        "player": "Roger Staubach",
+        "year": 1971
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 134.0,
+        "player": "Bob Griese",
+        "year": 1971
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 147.0,
+        "player": "Earl Morrall",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 88.0,
+        "player": "Johnny Unitas",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 25.0,
+        "player": "Sam Havrilak",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 127.0,
+        "player": "Craig Morton",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 142.0,
+        "player": "Len Dawson",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 183.0,
+        "player": "Joe Kapp",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 16.0,
+        "player": "Gary Cuozzo",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 110.0,
+        "player": "Johnny Unitas",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 71.0,
+        "player": "Earl Morrall",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 206.0,
+        "player": "Joe Namath",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Babe Parilli",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 202.0,
+        "player": "Bart Starr",
+        "year": 1967
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 208.0,
+        "player": "Daryle Lamonica",
+        "year": 1967
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 250.0,
+        "player": "Bart Starr",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 0.0,
+        "player": "Zeke Bratkowski",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 211.0,
+        "player": "Len Dawson",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_yards",
+        "Value": 17.0,
+        "player": "Pete Beathard",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Joe Burrow",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Joe Mixon",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Matthew Stafford",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Cooper Kupp",
+        "year": 2021
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Patrick Mahomes",
+        "year": 2020
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Tom Brady",
+        "year": 2020
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Patrick Mahomes",
+        "year": 2019
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Jimmy Garoppolo",
+        "year": 2019
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Tom Brady",
+        "year": 2018
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jared Goff",
+        "year": 2018
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Tom Brady",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Danny Amendola",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Nick Foles",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Trey Burton",
+        "year": 2017
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Matt Ryan",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Tom Brady",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Julian Edelman",
+        "year": 2016
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Cam Newton",
+        "year": 2015
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Peyton Manning",
+        "year": 2015
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 4.0,
+        "player": "Tom Brady",
+        "year": 2014
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Russell Wilson",
+        "year": 2014
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Peyton Manning",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Russell Wilson",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Tarvaris Jackson",
+        "year": 2013
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Joe Flacco",
+        "year": 2012
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Colin Kaepernick",
+        "year": 2012
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Tom Brady",
+        "year": 2011
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Eli Manning",
+        "year": 2011
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Aaron Rodgers",
+        "year": 2010
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Ben Roethlisberger",
+        "year": 2010
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Peyton Manning",
+        "year": 2009
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Drew Brees",
+        "year": 2009
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Kurt Warner",
+        "year": 2008
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Ben Roethlisberger",
+        "year": 2008
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Tom Brady",
+        "year": 2007
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Eli Manning",
+        "year": 2007
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Rex Grossman",
+        "year": 2006
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Peyton Manning",
+        "year": 2006
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Ben Roethlisberger",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Antwaan Randle El",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Matt Hasselbeck",
+        "year": 2005
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Tom Brady",
+        "year": 2004
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Donovan McNabb",
+        "year": 2004
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Jake Delhomme",
+        "year": 2003
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Tom Brady",
+        "year": 2003
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Rich Gannon",
+        "year": 2002
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Brad Johnson",
+        "year": 2002
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Tom Brady",
+        "year": 2001
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Kurt Warner",
+        "year": 2001
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Kerry Collins",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Trent Dilfer",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Tony Banks",
+        "year": 2000
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Steve McNair",
+        "year": 1999
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Kurt Warner",
+        "year": 1999
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Chris Chandler",
+        "year": 1998
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "John Elway",
+        "year": 1998
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "John Elway",
+        "year": 1997
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Brett Favre",
+        "year": 1997
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Brett Favre",
+        "year": 1996
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Drew Bledsoe",
+        "year": 1996
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Troy Aikman",
+        "year": 1995
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Neil O'Donnell",
+        "year": 1995
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Stan Humphries",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Gale Gilbert",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 6.0,
+        "player": "Steve Young",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Bill Musgrave",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Elvis Grbac",
+        "year": 1994
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jim Kelly",
+        "year": 1993
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Troy Aikman",
+        "year": 1993
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Frank Reich",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jim Kelly",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 4.0,
+        "player": "Troy Aikman",
+        "year": 1992
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Jim Kelly",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Frank Reich",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Mark Rypien",
+        "year": 1991
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jim Kelly",
+        "year": 1990
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Jeff Hostetler",
+        "year": 1990
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "John Elway",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Gary Kubiak",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 5.0,
+        "player": "Joe Montana",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Steve Young",
+        "year": 1989
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Boomer Esiason",
+        "year": 1988
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Joe Montana",
+        "year": 1988
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "John Elway",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Steve Sewell",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 4.0,
+        "player": "Doug Williams",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jay Schroeder",
+        "year": 1987
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "John Elway",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Gary Kubiak",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Phil Simms",
+        "year": 1986
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Jim McMahon",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Steve Fuller",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Steve Grogan",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Tony Eason",
+        "year": 1985
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Dan Marino",
+        "year": 1984
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Joe Montana",
+        "year": 1984
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Jim Plunkett",
+        "year": 1983
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Joe Theismann",
+        "year": 1983
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "David Woodley",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Don Strock",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Joe Theismann",
+        "year": 1982
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Ken Anderson",
+        "year": 1981
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Joe Montana",
+        "year": 1981
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Ron Jaworski",
+        "year": 1980
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Jim Plunkett",
+        "year": 1980
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Terry Bradshaw",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Vince Ferragamo",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Lawrence McCutcheon",
+        "year": 1979
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 3.0,
+        "player": "Roger Staubach",
+        "year": 1978
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 4.0,
+        "player": "Terry Bradshaw",
+        "year": 1978
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Roger Staubach",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Danny White",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Robert Newhouse",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Craig Morton",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Norris Weese",
+        "year": 1977
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Fran Tarkenton",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Bob Lee",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Ken Stabler",
+        "year": 1976
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Roger Staubach",
+        "year": 1975
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Terry Bradshaw",
+        "year": 1975
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Fran Tarkenton",
+        "year": 1974
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Terry Bradshaw",
+        "year": 1974
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Bob Griese",
+        "year": 1973
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Fran Tarkenton",
+        "year": 1973
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Bob Griese",
+        "year": 1972
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Billy Kilmer",
+        "year": 1972
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Roger Staubach",
+        "year": 1971
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Bob Griese",
+        "year": 1971
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Earl Morrall",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Johnny Unitas",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Sam Havrilak",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Craig Morton",
+        "year": 1970
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Len Dawson",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Joe Kapp",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Gary Cuozzo",
+        "year": 1969
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Johnny Unitas",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Earl Morrall",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Joe Namath",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Babe Parilli",
+        "year": 1968
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Bart Starr",
+        "year": 1967
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Daryle Lamonica",
+        "year": 1967
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 2.0,
+        "player": "Bart Starr",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Zeke Bratkowski",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 1.0,
+        "player": "Len Dawson",
+        "year": 1966
+      },
+      {
+        "Metric": "passing_td",
+        "Value": 0.0,
+        "player": "Pete Beathard",
+        "year": 1966
+      }
+    ],
+    "data-b1f683b70c9f6faf70df8a161a4ebe64": [
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 304.0,
+        "Highlight": "Other QBs",
+        "player": "Aaron Rodgers"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 43.0,
+        "Highlight": "Other QBs",
+        "player": "Antwaan Randle El"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Babe Parilli"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 1.5,
+        "Avg Passing Yards": 226.0,
+        "Highlight": "Other QBs",
+        "player": "Bart Starr"
+      },
+      {
+        "Appearances": 3,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 214.0,
+        "Highlight": "Other QBs",
+        "player": "Ben Roethlisberger"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 6.0,
+        "Highlight": "Other QBs",
+        "player": "Bill Musgrave"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 104.0,
+        "Highlight": "Other QBs",
+        "player": "Billy Kilmer"
+      },
+      {
+        "Appearances": 3,
+        "Avg Passing TDs": 0.3333333333333333,
+        "Avg Passing Yards": 98.33333333333333,
+        "Highlight": "Other QBs",
+        "player": "Bob Griese"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 81.0,
+        "Highlight": "Other QBs",
+        "player": "Bob Lee"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 144.0,
+        "Highlight": "Other QBs",
+        "player": "Boomer Esiason"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 215.0,
+        "Highlight": "Other QBs",
+        "player": "Brad Johnson"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 2.5,
+        "Avg Passing Yards": 251.0,
+        "Highlight": "Other QBs",
+        "player": "Brett Favre"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 265.0,
+        "Highlight": "Other QBs",
+        "player": "Cam Newton"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 219.0,
+        "Highlight": "Other QBs",
+        "player": "Chris Chandler"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 302.0,
+        "Highlight": "Other QBs",
+        "player": "Colin Kaepernick"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Cooper Kupp"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 0.5,
+        "Avg Passing Yards": 83.0,
+        "Highlight": "Other QBs",
+        "player": "Craig Morton"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 318.0,
+        "Highlight": "Other QBs",
+        "player": "Dan Marino"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Danny Amendola"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 5.0,
+        "Highlight": "Other QBs",
+        "player": "Danny White"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 208.0,
+        "Highlight": "Other QBs",
+        "player": "Daryle Lamonica"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 97.0,
+        "Highlight": "Other QBs",
+        "player": "David Woodley"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Don Strock"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 357.0,
+        "Highlight": "Other QBs",
+        "player": "Donovan McNabb"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 4.0,
+        "Avg Passing Yards": 340.0,
+        "Highlight": "Other QBs",
+        "player": "Doug Williams"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 253.0,
+        "Highlight": "Other QBs",
+        "player": "Drew Bledsoe"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 288.0,
+        "Highlight": "Other QBs",
+        "player": "Drew Brees"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 109.0,
+        "Highlight": "Other QBs",
+        "player": "Earl Morrall"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 1.5,
+        "Avg Passing Yards": 275.5,
+        "Highlight": "Other QBs",
+        "player": "Eli Manning"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Elvis Grbac"
+      },
+      {
+        "Appearances": 3,
+        "Avg Passing TDs": 0.3333333333333333,
+        "Avg Passing Yards": 163.0,
+        "Highlight": "Other QBs",
+        "player": "Fran Tarkenton"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 0.5,
+        "Avg Passing Yards": 102.5,
+        "Highlight": "Other QBs",
+        "player": "Frank Reich"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 30.0,
+        "Highlight": "Other QBs",
+        "player": "Gale Gilbert"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 16.0,
+        "Highlight": "Other QBs",
+        "player": "Gary Cuozzo"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 38.0,
+        "Highlight": "Other QBs",
+        "player": "Gary Kubiak"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 323.0,
+        "Highlight": "Other QBs",
+        "player": "Jake Delhomme"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 229.0,
+        "Highlight": "Other QBs",
+        "player": "Jared Goff"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Jay Schroeder"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 222.0,
+        "Highlight": "Other QBs",
+        "player": "Jeff Hostetler"
+      },
+      {
+        "Appearances": 4,
+        "Avg Passing TDs": 0.5,
+        "Avg Passing Yards": 207.25,
+        "Highlight": "Other QBs",
+        "player": "Jim Kelly"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 256.0,
+        "Highlight": "Other QBs",
+        "player": "Jim McMahon"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 216.5,
+        "Highlight": "Other QBs",
+        "player": "Jim Plunkett"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 219.0,
+        "Highlight": "Other QBs",
+        "player": "Jimmy Garoppolo"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 263.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Burrow"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 287.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Flacco"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 183.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Kapp"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 6.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Mixon"
+      },
+      {
+        "Appearances": 4,
+        "Avg Passing TDs": 2.75,
+        "Avg Passing Yards": 285.5,
+        "Highlight": "Other QBs",
+        "player": "Joe Montana"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 206.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Namath"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 193.0,
+        "Highlight": "Other QBs",
+        "player": "Joe Theismann"
+      },
+      {
+        "Appearances": 5,
+        "Avg Passing TDs": 0.6,
+        "Avg Passing Yards": 225.6,
+        "Highlight": "Other QBs",
+        "player": "John Elway"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 0.5,
+        "Avg Passing Yards": 99.0,
+        "Highlight": "Other QBs",
+        "player": "Johnny Unitas"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Julian Edelman"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 300.0,
+        "Highlight": "Other QBs",
+        "player": "Ken Anderson"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 180.0,
+        "Highlight": "Other QBs",
+        "player": "Ken Stabler"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 112.0,
+        "Highlight": "Other QBs",
+        "player": "Kerry Collins"
+      },
+      {
+        "Appearances": 3,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 385.3333333333333,
+        "Highlight": "Other QBs",
+        "player": "Kurt Warner"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 24.0,
+        "Highlight": "Other QBs",
+        "player": "Lawrence McCutcheon"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 176.5,
+        "Highlight": "Other QBs",
+        "player": "Len Dawson"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 292.0,
+        "Highlight": "Other QBs",
+        "player": "Mark Rypien"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 273.0,
+        "Highlight": "Other QBs",
+        "player": "Matt Hasselbeck"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 284.0,
+        "Highlight": "Other QBs",
+        "player": "Matt Ryan"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 283.0,
+        "Highlight": "Other QBs",
+        "player": "Matthew Stafford"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 239.0,
+        "Highlight": "Other QBs",
+        "player": "Neil O'Donnell"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 373.0,
+        "Highlight": "Other QBs",
+        "player": "Nick Foles"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 22.0,
+        "Highlight": "Other QBs",
+        "player": "Norris Weese"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 278.0,
+        "Highlight": "Other QBs",
+        "player": "Patrick Mahomes"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 17.0,
+        "Highlight": "Other QBs",
+        "player": "Pete Beathard"
+      },
+      {
+        "Appearances": 4,
+        "Avg Passing TDs": 0.75,
+        "Avg Passing Yards": 250.25,
+        "Highlight": "Other QBs",
+        "player": "Peyton Manning"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 268.0,
+        "Highlight": "Other QBs",
+        "player": "Phil Simms"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 165.0,
+        "Highlight": "Other QBs",
+        "player": "Rex Grossman"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 272.0,
+        "Highlight": "Other QBs",
+        "player": "Rich Gannon"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 29.0,
+        "Highlight": "Other QBs",
+        "player": "Robert Newhouse"
+      },
+      {
+        "Appearances": 4,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 183.5,
+        "Highlight": "Other QBs",
+        "player": "Roger Staubach"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 291.0,
+        "Highlight": "Other QBs",
+        "player": "Ron Jaworski"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 2.0,
+        "Avg Passing Yards": 226.5,
+        "Highlight": "Other QBs",
+        "player": "Russell Wilson"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 25.0,
+        "Highlight": "Other QBs",
+        "player": "Sam Havrilak"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 275.0,
+        "Highlight": "Other QBs",
+        "player": "Stan Humphries"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Steve Fuller"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 177.0,
+        "Highlight": "Other QBs",
+        "player": "Steve Grogan"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 214.0,
+        "Highlight": "Other QBs",
+        "player": "Steve McNair"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 23.0,
+        "Highlight": "Other QBs",
+        "player": "Steve Sewell"
+      },
+      {
+        "Appearances": 2,
+        "Avg Passing TDs": 3.0,
+        "Avg Passing Yards": 172.5,
+        "Highlight": "Other QBs",
+        "player": "Steve Young"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Tarvaris Jackson"
+      },
+      {
+        "Appearances": 4,
+        "Avg Passing TDs": 2.25,
+        "Avg Passing Yards": 233.0,
+        "Highlight": "Other QBs",
+        "player": "Terry Bradshaw"
+      },
+      {
+        "Appearances": 10,
+        "Avg Passing TDs": 2.1,
+        "Avg Passing Yards": 303.9,
+        "Highlight": "Tom Brady",
+        "player": "Tom Brady"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Tony Banks"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Tony Eason"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 153.0,
+        "Highlight": "Other QBs",
+        "player": "Trent Dilfer"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 1.0,
+        "Avg Passing Yards": 1.0,
+        "Highlight": "Other QBs",
+        "player": "Trey Burton"
+      },
+      {
+        "Appearances": 3,
+        "Avg Passing TDs": 1.6666666666666667,
+        "Avg Passing Yards": 229.66666666666666,
+        "Highlight": "Other QBs",
+        "player": "Troy Aikman"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 212.0,
+        "Highlight": "Other QBs",
+        "player": "Vince Ferragamo"
+      },
+      {
+        "Appearances": 1,
+        "Avg Passing TDs": 0.0,
+        "Avg Passing Yards": 0.0,
+        "Highlight": "Other QBs",
+        "player": "Zeke Bratkowski"
+      }
+    ]
+  },
+  "hconcat": [
+    {
+      "data": {
+        "name": "data-b1f683b70c9f6faf70df8a161a4ebe64"
+      },
+      "encoding": {
+        "color": {
+          "field": "Highlight",
+          "scale": {
+            "domain": [
+              "Tom Brady",
+              "Other QBs"
+            ],
+            "range": [
+              "red",
+              "steelblue"
+            ]
+          },
+          "type": "nominal"
+        },
+        "size": {
+          "field": "Appearances",
+          "legend": {
+            "title": "Appearances"
+          },
+          "scale": {
+            "range": [
+              100,
+              1000
+            ]
+          },
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "player",
+            "type": "nominal"
+          },
+          {
+            "field": "Avg Passing Yards",
+            "type": "quantitative"
+          },
+          {
+            "field": "Avg Passing TDs",
+            "type": "quantitative"
+          },
+          {
+            "field": "Appearances",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "Avg Passing Yards",
+          "title": "Avg Passing Yards (Super Bowl)",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "Avg Passing TDs",
+          "title": "Avg Passing TDs (Super Bowl)",
+          "type": "quantitative"
+        }
+      },
+      "height": 400,
+      "mark": {
+        "type": "circle"
+      },
+      "name": "view_175",
+      "title": "Super Bowl Performance - Click QB to View Details",
+      "width": 400
+    },
+    {
+      "data": {
+        "name": "data-121fbc33e510c3665e6836d898b5f59f"
+      },
+      "encoding": {
+        "color": {
+          "field": "Value",
+          "scale": {
+            "reverse": true,
+            "scheme": "redyellowblue"
+          },
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "player",
+            "type": "nominal"
+          },
+          {
+            "field": "year",
+            "type": "ordinal"
+          },
+          {
+            "field": "Metric",
+            "type": "nominal"
+          },
+          {
+            "field": "Value",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "field": "year",
+          "title": "Super Bowl Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "Metric",
+          "title": "Metric",
+          "type": "nominal"
+        }
+      },
+      "height": 400,
+      "mark": {
+        "type": "rect"
+      },
+      "title": "Selected QB - Super Bowl Heatmap (Passing Yards & TDs)",
+      "transform": [
+        {
+          "filter": {
+            "param": "param_179"
+          }
+        }
+      ],
+      "width": 400
+    }
+  ],
+  "params": [
+    {
+      "name": "param_179",
+      "select": {
+        "fields": [
+          "player"
+        ],
+        "type": "point"
+      },
+      "views": [
+        "view_175"
+      ]
+    }
+  ]
+}, {mode: "vega-lite"}).catch(console.error);
+  </script>
+
+</body>
+</html>
